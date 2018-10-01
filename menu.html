@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- importing Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- linking to external style sheet -->
+    <link rel="stylesheet" href="restaurantStyles.css">
+    <!-- importing Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <!-- linking to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Wendy+One" rel="stylesheet">
+    <title>Menu</title>
+</head>
+
+<!-- setting up internal style sheet -->
+<style>
+    /* keeping table text white to match site's theme */
+
+    table {
+        color: white;
+    }
+
+    /* keeping beverage table text red to match site's theme */
+
+    .bev-table {
+        color: #9c2f1d;
+    }
+
+    /* making table details align properly and take up appropriate space */
+
+    td {
+        text-align: center;
+        width: 50%;
+    }
+
+    /* making headings match site theme as well as table row dimensions */
+
+    h1 {
+        background-color: white;
+        color: #9c2f1d;
+        height: 61px;
+        text-align: center;
+    }
+
+    /* making table headings cleaner and matching width of their details */
+
+    th {
+        text-align: center;
+        font-size: 25px;
+        width: 50%;
+    }
+
+    /* making the row appropriately spaced from the side of the viewport */
+
+    .row {
+        margin: 50px;
+    }
+
+
+    /* making prices italic */
+
+    .price {
+        font-style: italic;
+    }
+
+    /* making the beverage section white to match site's theme */
+
+    .bev {
+        background-color: white;
+    }
+
+    /* making the food section red to match site's theme */
+
+    .food {
+        background-color: #9c2f1d;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <!-- header that is consistent across all pages -->
+    <div class="header">
+        <img id="logo" src="Hungryhub.svg" alt="logo">
+        <h1 style="color: black;">Hungry Hub</h1>
+    </div>
+    <hr class="nav-hr">
+    <!-- bootstrap nav using pills -->
+    <!-- each item includes an icon from Font Awesome  -->
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">
+                <i class="fas fa-home"></i>Home</a>
+        </li>
+        <!-- setting menu as the active item on this page -->
+        <li class="nav-item">
+            <a class="nav-link active" href="menu.html">
+                <i class="fab fa-elementor"></i>Menu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="form.html">
+                <i class="fas fa-at"></i>Contact Us</a>
+        </li>
+    </ul>
+    <hr class="nav-hr-bot">
+    <h1>Food</h1>
+    <!-- food secrtion of page -->
+    <!-- utilizes bootsrtap breaklpoints for responsiveness -->
+    <div class="container-fluid food">
+        <div class="row">
+            <div class="col col-lg-4 col-sm-6 col-12">
+                <table>
+                    <tr>
+                        <th>Burger and Fries</th>
+                    </tr>
+                    <tr>
+                        <td>An American Classic</td>
+                    </tr>
+                    <tr>
+                        <td>Your Choice - with or without cheese</td>
+                    </tr>
+                    <tr>
+                        <td>Pickle, onion, tomato, and lettuce</td>
+                    </tr>
+                    <tr>
+                        <td>Served with our famous thick cut french fries</td>
+                    </tr>
+                    <tr>
+                        <td class="price">$7.95</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col col-lg-4 col-sm-6 col-12">
+                <table>
+                    <tr>
+                        <th>Hot Dog and Chips</th>
+                    </tr>
+                    <tr>
+                        <td>A Summer Classic</td>
+                    </tr>
+                    <tr>
+                        <td>Your Choice - white or wheat</td>
+                    </tr>
+                    <tr>
+                        <td>Relish, mustard, and ketchup</td>
+                    </tr>
+                    <tr>
+                        <td>Served with our house-made chips</td>
+                    </tr>
+                    <tr>
+                        <td class="price">$7.95</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col col-lg-4 col-sm-6 col-12">
+                <table>
+                    <tr>
+                        <th>Italian Sausage and Peppers</th>
+                    </tr>
+                    <tr>
+                        <td>An All-Time Favorite!</td>
+                    </tr>
+                    <tr>
+                        <td>Your choice - mild or spicy Cole Slaw</td>
+                    </tr>
+                    <tr>
+                        <td>Served with garlic mashers</td>
+                    </tr>
+                    <tr>
+                        <td class="price">$10.95</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col col-lg-4 col-sm-6 col-12">
+                <table>
+                    <tr>
+                        <th>Tenderloin Sandwich and Chips</th>
+                    </tr>
+                    <tr>
+                        <td>Really Hits the Spot!</td>
+                    </tr>
+                    <tr>
+                        <td>Plain or Seasame Seed Bun</td>
+                    </tr>
+                    <tr>
+                        <td>Pickle, onion, tomato, and lettuce</td>
+                    </tr>
+                    <tr>
+                        <td>Served with our house-made chips</td>
+                    </tr>
+                    <tr>
+                        <td class="price">$8.95</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col col-lg-4 col-sm-6 col-12">
+                <table>
+                    <tr>
+                        <th>House Salad</th>
+                    </tr>
+                    <tr>
+                        <td>On the Lighter Side</td>
+                    </tr>
+                    <tr>
+                        <td>Your Choice - with or without cheese</td>
+                    </tr>
+                    <tr>
+                        <td>Iceberg lettuce, tomatoes, peppers</td>
+                    </tr>
+                    <tr>
+                        <td>Thousand Island or Ranch Dressing Served with a dinner roll</td>
+                    </tr>
+                    <tr>
+                        <td class="price">$6.95</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col col-lg-4 col-sm-6 col-12">
+                <table>
+                    <tr>
+                        <th>Brisket Sandwich and Fries</th>
+                    </tr>
+                    <tr>
+                        <td>A Taste of Texas</td>
+                    </tr>
+                    <tr>
+                        <td>Smoked Brisket on a thick-cut Texas Toast</td>
+                    </tr>
+                    <tr>
+                        <td>Cole Slaw</td>
+                    </tr>
+                    <tr>
+                        <td>Served with our famous thick-cut french fries</td>
+                    </tr>
+                    <tr>
+                        <td class="price">$7.95</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- beverage section of the page -->
+    <h1> Beverages</h1>
+    <div class="container-fluid bev">
+        <table class="table table-borderless bev-table">
+            <tbody>
+                <tr>
+                    <th scope="row">Root Beer</th>
+                    <td class="price">$3.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Bottled Water</th>
+                    <td class="price">$1.25</td>
+                </tr>
+                <tr>
+                    <th scope="row">Lemonade</th>
+                    <td class="price">$1.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Iced Tea</th>
+                    <td class="price">$1.25</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- message letting users know to enable JavaScript consistent across all pages -->
+    <noscript>
+        <p>Please enable JavaScript in your browser for better use of the website.</p>
+    </noscript>
+    <hr>
+    <!-- footer thst is consistent across all pages -->
+    <div>
+        <p>123 Easy Street Mooresville, North Carolina 28117</p>
+        <p>(555)-123-4567</p>
+    </div>
+</body>
+
+
+</html>

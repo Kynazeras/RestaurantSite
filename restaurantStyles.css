@@ -1,0 +1,106 @@
+/* making the home body red color with appropriate spacing */
+.home-body {
+  background-color: #9c2f1d;
+  padding: 20px;
+}
+
+/* establishing styles for consistent header */
+.header {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* centering the header h1 with the logo and gicing it an hosted font */
+.header h1 {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  display: inline;
+}
+
+/* making the jumbotron items align properly */
+.jumbotron {
+  text-align: center;
+  padding: 5px;
+}
+
+/* making the jumbotron image center */
+.jumbotron img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* making the restaurant details heading center */
+h3 {
+  text-align: center;
+  color: white;
+}
+
+/* spacing out the nav items */
+ul {
+  padding: 10px;
+}
+
+/* changing the default acrive color from Bootstrap to match the site's theme */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #9c2f1d;
+}
+
+/* making the hrs flush with the navs and footer */
+.nav-hr {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nav-hr-bot {
+  margin-top: 0;
+}
+
+/* sizing the images inside of the carousel */
+.itemsize img {
+  width: auto;
+  height: 500px;
+  max-height: 500px;
+}
+
+/* making the logo smaller for the header */
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+/* spacing the carousel like the rest of the page */
+.jumbo-container {
+  padding-top: 20px;
+}
+
+/* making the restaurant info text white */
+.info p {
+  color: white;
+}
+
+/* center aligning all paragraphs within divs */
+div p {
+  text-align: center;
+}
+
+/* making all links black an align with their font awesome icons */
+a {
+  margin: 0 10px;
+  color: black;
+}
+
+/* making links bold when hovered */
+a:hover {
+  font-weight: bold;
+  color: black;
+}
+
+.form-group.row.has-danger > div > input {
+  border: 1px solid red;
+}
